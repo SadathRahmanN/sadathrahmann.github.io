@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="flex">
+        <div class="logo">PixelPilot<span>.</span></div>
+        <nav>
+          <ul class="flex">
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Service</a></li>
+            <li><a href="#project">Portfolio</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+          <div id="search" class="flex">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="" id="" placeholder="Search..." />
+          </div>
+        </nav>
+      </header>
+
+      <div class="main flex">
+        <div class="main-one">
+          <h1>Hy! I am</h1>
+          <span class="auto">Sadath Rahman Narangavil</span>
+          <p>
+            Welcome to my portfolio website! I'm a passionate software developer with a talent for creating 
+            innovative solutions to complex problems. Whether it's developing cutting-edge applications,
+             optimizing business processes, or automating tasks, 
+            I'm committed to delivering the best possible results for my clients.
+          </p>
+          <a href="https://www.example.com">
+            <button>Hire Me</button>
+          </a>
+        </div>
+        <div class="main-two">
+          <img src="./Images/4.png" alt="" width="500" height="500" />
+        </div>
+      </div>
+
+      <section class="projects" id="project">
+        <h1>My Awesome <br /><span>Projects</span></h1>
+        <p>
+          I've had the privilege of working on some amazing projects throughout my career. From developing mobile 
+          apps that simplify people's lives, to creating sophisticated software solutions that streamline businesses,
+          I'm passionate about using technology to make a difference. One of my favorite projects was a 
+          custom e-commerce platform that improved sales and inventory management for a small business.
+          Let's connect and discuss how I can bring my skills and experience to your next project!
+        </p>
+		<a href="https://www.example.com">
+			<button class="button">Download CV</button>
+	  </a> 
+        <div class="projects-div flex div-1">
+          <img src="./Images/Projects/5.png" alt="" />
+          <h3>Ecommerce Website</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, ex!
+          </p>
+		  <a href="https://www.example.com">
+            <button>Live Preview</button>
+		 </a>
+        </div>
+        <div class="projects-div flex div-2">
+          <img src="./Images/Projects/6.png" alt="" />
+          <h3>Weather App</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere,
+            debitis.
+          </p>
+		  <a href="https://www.example.com">
+			<button>Live Preview</button>
+		  </a>
+        </div>
+        <div class="projects-div flex div-3">
+          <img src="./Images/Projects/7.png" alt="" />
+          <h3>Food App</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+            nulla!
+          </p>
+		  <a href="https://www.example.com">
+           <button>Live Preview</button>
+		   </a>
+        </div>
+      </section>
+      <br /><br />
+
+      <section class="about flex" id="about">
+        <div class="about-one">
+          <h1>About me</h1>
+          <span>Sadath Rahman Narangavil</span>
+          <p>
+            I'm a software developer with a passion for creating innovative solutions that solve real-world problems. 
+            With experience in multiple programming languages and frameworks, I enjoy working on projects that 
+            me and allow me to continually grow and learn. When I'm not coding, I enjoy hiking, playing football,
+            and spending time with my family.
+            Thanks for visiting my website!
+          </p>
+          <div class="btns">
+			<a href="https://www.example.com">
+			 <button>Download CV</button>
+		  </a>
+		  <a href="https://www.example.com">
+              <button>Contact Me</button>
+			</a>
+          </div>
+        </div>
+        <div class="about-two">
+          <img src="./Images/About/1.png" alt="" />
+        </div>
+      </section>
+      <br /><br /><br />
+
+      <section class="contact" id="contact">
+        <h1>Let Us <span>Talk!</span></h1>
+        <div class="box flex">
+          <div>
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Name.." />
+          </div>
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" placeholder="Email.." />
+          </div>
+          <textarea
+            name=""
+            id=""
+            cols="60"
+            rows="5"
+            placeholder="Enter your Message here...."
+          ></textarea>
+          <div>
+            <input type="submit" class="send" value="Send" />
+          </div>
+        </div>
+      </section>
+      <footer class="flex" id="footer">
+        <div class="copy">@copyright 2025 PixelPilot.</div>
+        <div class="social">
+			<a href="https://www.instagram.com/_sa_ath_/"><i class="fa-brands fa-instagram"></i></a>
+			<a href="https://www.example.com"> <i class="fa-brands fa-facebook"></i></a>
+			<a href="https://www.example.com"> <i class="fa-brands fa-whatsapp"></i></a>
+			<a href="https://www.example.com"><i class="fa-solid fa-phone"></i></a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".auto", {
+        strings: ["Sadath Rahman Narangavil", "Developer", "UI/UX Designer"],
+        typeSpeed: 60,
+        backSpeed: 70,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
