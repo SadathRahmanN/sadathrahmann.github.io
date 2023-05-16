@@ -1,151 +1,293 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
- <title> Sadath Rahman N Protfolio Website </title>
-
- <link rel="stylesheet" type="text/css" href="css/style.css">
-
- <script src="javascript\script.js"></script>
-  
- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
- <link rel="preconnect" href="https://fonts.gstatic.com">
- <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <title>Sadath Rahman N Portfolio Website</title>
+    <script src="javascript/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <!----hero Section start-->
 
+ <!-- Hero Section -->
     <div class="hero">
+    
+ <!-- Navbar-->
         <nav>
             <h2 class="logo">Protfo<span>lio</span></h2>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#service">Services</a></li>
-                <li><a href="#">Skills</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact-me">Contact Me</a></li>
             </ul>
-            <a href="#" class="btn">Subscribe</a>
+            <a href="#subscribe" class="btn">Subscribe</a>
         </nav>
 
+<!-- Home Section -->
+    <section class="home" id="home"></section>
         <div class="content">
             <h4>Hy! I am</h4>
             <h1 class="auto">SADATH <span class="lightred">RAHMAN</span> <span class="darkred">NARANGAVIL</span></h1>
+            <!----Subscribe Section----->
+            <section class="subscribe" id="subscribe">
             <div class="newsletter">
-                <form>
-                    <input type="email" name="email" id="mail" placeholder="Enter Your Name">
-                    <input type="submit" name="submit" value="Lets's Start">
-                </form>
+              <form id="subscribe-form">
+                <input type="email" name="email" id="email-input" placeholder="Enter Your Email">
+                <input type="submit" name="submit" id="subscribe-button" value="Let's Start">
+              </form>
             </div>
         </div>
     </div>
+    </section>
+    </section>
 
-    <!----About Section Start-->
+<!-- About Section -->
     <section class="about" id="about">
         <div class="main">
-            <img src="img\sidepick.jpg">
+            <img src="img/sidepick.jpg">
             <div class="about-text">
                 <h2>About Me</h2>
                 <h5>Developer <span>& Designer</span></h5>
                 <p>
-                    My name is Sadath Rahman and I recently completed my Bachelor's degree in Computer Science. I have a passion for designing and building websites that not only look great, but also function well. As a web designer, I enjoy creating visually appealing layouts and selecting color schemes that complement the content of each page. I am always looking for new challenges and opportunities to learn and grow in my field. Whether I'm working on a small personal project or a large-scale website for a client, I am committed to delivering high-quality results that exceed expectations.
+                    My name is Sadath Rahman and I recently completed my Bachelor's degree in Computer Science. I have a passion
+                    for designing and building websites that not only look great but also function well. As a web designer, I
+                    enjoy creating visually appealing layouts and selecting color schemes that complement the content of each
+                    page. I am always looking for new challenges and opportunities to learn and grow in my field. Whether I'm
+                    working on a small personal project or a large-scale website for a client, I am committed to delivering
+                    high-quality results that exceed expectations.
                 </p>
                 <a href="https://api.whatsapp.com/send?phone=919747536130">
-                <button type="button">Let's Talk</button></a>
+                    <button type="button">Let's Talk</button>
+                </a>
                 <a href="resume/RESUME (SADATH RAHMAN NARANGAVIL)OG.pdf" download id="resume-link">
                     <button type="button">Download CV</button>
-                  </a>
-                                    
-</div>
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-----service section start---->
-    <section class="service flex" id="service">
+<!-- Service Section -->
+<section class="service flex" id="service">
     <div class="service">
         <div class="title">
             <h2>Services</h2>
         </div>
-
         <div class="box">
             <div class="card">
-                <i class="fa-solid fa-bars"></i>
-                <h5>Web development</h5>
+                <i class="fas fa-bars"></i>
+                <h5>Web Development</h5>
                 <div class="pra">
-                    <p>Lorem ipsum suscipit dolorum ex fuga quam, facilis veniam aspernatur, corrupti temporibus ullam adipisci labore, eius debitis molestias numquam!
-                    </p>
-                    <p style="text-align: center;">
-                        <a class="button" href="#">Read More</a>
-                    </p>
+                    <p>Lorem ipsum suscipit dolorum ex fuga quam, facilis veniam aspernatur, corrupti temporibus ullam adipisci
+                        labore, eius debitis molestias numquam!</p>
+                        <p class="full-para">Lorem ipsum suscipit dolorum ex fuga quam, facilis veniam aspernatur, corrupti temporibus
+                            ullam adipisci labore, eius debitis molestias numquam! Aenean lacinia bibendum nulla sed consectetur. Etiam
+                            porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia
+                            bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit
+                            libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget
+                            metus.</p>
+                            <p style="text-align: center;">
+                                <a class="button" href="#">Read More</a>
+                            </p>
                 </div>
             </div>
             <div class="card">
-                <i class="fa-solid fa-user"></i>
-                <h5>Web development</h5>
+                <i class="fas fa-user"></i>
+                <h5>Web Design</h5>
                 <div class="pra">
-                    <p>Lorem ipsum voluptate sit. Reiciendis suscipit dolorum ex fuga quam, facilis veniam aspernatur, corrupti temporibus ullam adipisci labore, eius debitis molestias numquam!
-                    </p>
-                    <p style="text-align: center;">
-                        <a class="button" href="#">Read More</a>
-                    </p>
+                    <p>Lorem ipsum suscipit dolorum ex fuga quam, facilis veniam aspernatur, corrupti temporibus ullam adipisci
+                        labore, eius debitis molestias numquam!</p>
+                        <p class="full-para">Lorem ipsum suscipit dolorum ex fuga quam, facilis veniam aspernatur, corrupti temporibus
+                            ullam adipisci labore, eius debitis molestias numquam! Aenean lacinia bibendum nulla sed consectetur. Etiam
+                            porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia
+                            bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit
+                            libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget
+                            metus.</p>
+                            <p style="text-align: center;">
+                                <a class="button" href="#">Read More</a>
+                            </p>
                 </div>
             </div>
             <div class="card">
-                <i class="fa-solid fa-bell"></i>
-                <h5>Web development</h5>
+                <i class="fas fa-bell"></i>
+                <h5>Responsive Design</h5>
                 <div class="pra">
-                    <p>Lorem ipsum dolor sit Ex pariatur voluptataspernatur, corrupti temporibus ullam adipisci labore, eius debitis molestias numquam!
-                    </p>
-                    <p style="text-align: center;">
-                        <a class="button" href="#">Read More</a>
-                    </p>
+                    <p>Lorem ipsum suscipit dolorum ex fuga quam, facilis veniam aspernatur, corrupti temporibus ullam adipisci
+                        labore, eius debitis molestias numquam!</p>
+                        <p class="full-para">Lorem ipsum suscipit dolorum ex fuga quam, facilis veniam aspernatur, corrupti temporibus
+                            ullam adipisci labore, eius debitis molestias numquam! Aenean lacinia bibendum nulla sed consectetur. Etiam
+                            porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia
+                            bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit
+                            libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget
+                            metus.</p>
+                            <p style="text-align: center;">
+                                <a class="button" href="#">Read More</a>
+                            </p>
                 </div>
             </div>
+        </div>
     </div>
 </section>
 
-    <!-----Contact Me------>
-    <section class="contact-me" id="contact-me"></section>
-    <div class="contact-me">
-        <p>Let Me Get You A Beautiful Website.</p>
-        <a class="button-two" href="https://api.whatsapp.com/send?phone=919747536130">Hire Me</a>
+<!-- Skill Section -->
+<section class="skill" id="skills">
+    <div class="title">
+      <h2>My Skills</h2>
+    </div>
+    <div class="skill-container">
+      <div class="skill-box">
+        <h4>HTML</h4>
+        <div class="skill-level">
+          <i class="fab fa-html5"></i>
+        </div>
+      </div>
+      <div class="skill-box">
+        <h4>CSS</h4>
+        <div class="skill-level">
+          <i class="fab fa-css3-alt"></i>
+        </div>
+      </div>
+      <div class="skill-box">
+        <h4>JavaScript</h4>
+        <div class="skill-level">
+          <i class="fab fa-js"></i>
+        </div>
+      </div>
+      <div class="skill-box">
+        <h4>React JS</h4>
+        <div class="skill-level">
+          <i class="fab fa-react"></i>
+        </div>
+      </div>
+      <div class="skill-box">
+        <h4>PHP</h4>
+        <div class="skill-level">
+          <i class="fab fa-php"></i>
+        </div>
+      </div>
+      <div class="skill-box">
+        <h4>Python</h4>
+        <div class="skill-level">
+          <i class="fab fa-python"></i>
+        </div>
+      </div>
+      <div class="skill-box">
+        <h4>Node.js</h4>
+        <div class="skill-level">
+          <i class="fab fa-node"></i>
+        </div>
+      </div>
+      <div class="skill-box">
+        <h4>Laravel</h4>
+        <div class="skill-level">
+          <i class="fab fa-laravel"></i>
+        </div>
+       </div>
+      <div class="skill-box">
+        <h4>AWS</h4>
+        <div class="skill-level">
+            <i class="fa-brands fa-aws"></i>
+        </div>
+      </div>
+    <div class="skill-box">
+        <h4>Figma</h4>
+        <div class="skill-level">
+            <i class="fa-brands fa-figma"></i> 
+        </div>
+      </div>
     </div>
 
-    <!----footer start----->
-    <footer>
-        <p>Sadath Rahman Narangavil</p>
-        <div class="social">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-discord"></i></a>
-            <a href="#"><i class="fa-brands fa-gitlab"></i></a>
-            <a href="#"><i class="fa-brands fa-bitbucket"></i></a>
-            <a href="#"><i class="fa-brands fa-dribbble"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-sharp fa-regular fa-cup-togo"></i></a>
+  </section>
+  
+<!-- Project Section -->
+<section class="projects" id="projects">
+    <div class="title">
+      <h2>Projects</h2>
+      </div>>
+      <div class="slider-container">
+      <div class="slider">
+        <div class="projects">
+            <img src="project1.jpg" alt="Project 1">
+            <div class="description">Description of Project 1</div>
         </div>
-        <p class="end">CopyRight By Sadath Rahman Narangavil</p>
-    </footer>
+        <div class="project">
+            <img src="project2.jpg" alt="Project 2">
+            <div class="description">Description of Project 2</div>
+        </div>
+        <div class="project">
+            <img src="project3.jpg" alt="Project 3">
+            <div class="description">Description of Project 3</div>
+        </div>
+              <!-- Add more project elements here -->
+            </div>
+          </div>
+          
+  </section>
 
-    <!----FOR NAME MOVING------>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <script>
-      var typed = new Typed(".auto", {
-        strings: ["SADATH RAHMAN NARANGAVIL", "DEVELOPER"],
-        typeSpeed: 60,
-        backSpeed: 70,
-        loop: true,
-      });
-    </script>    
+<!------Customers Section-------->
+<section class="customers">
+  <div class="title">
+    <h2>Customers</h2>
+    </div>
+    <div class="customer-container">
+      <div class="customer">
+        <img src="customer1.jpg" alt="Customer 1">
+        <h3>Customer 1</h3>
+      </div>
+      <div class="customer">
+        <img src="customer2.jpg" alt="Customer 2">
+        <h3>Customer 2</h3>
+      </div>
+      <div class="customer">
+        <img src="customer3.jpg" alt="Customer 3">
+        <h3>Customer 3</h3>
+      </div>
+      <div class="customer">
+        <img src="customer4.jpg" alt="Customer 4">
+        <h3>Customer 4</h3>
+      </div>
+      <!-- Add more customers here -->
+    </div>
+  </section>
+  
+      
+<!-- Contact Me Section -->
+    <section class="contact-me" id="contact-me">
+        <div class="contact-me">
+            <p>Let Me Get You A Beautiful Website.</p>
+            <a class="button-two" href="https://api.whatsapp.com/send?phone=919747536130">Hire Me</a>
+        </div>
+    </section>
     
-
+    <!-- Footer Section -->
+    <footer>
+      <p>Sadath Rahman Narangavil</p>
+      <div class="social">
+        <a href="https://www.facebook.com/SadathRahmanN"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/_sa_ath_/"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/919747536130"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://github.com/SadathRahmanN"><i class="fab fa-github"></i></a>
+        <a href="https://support.discord.com/hc/en-us/profiles/7488526696983"><i class="fab fa-discord"></i></a>
+        <a href="https://gitlab.com/SADATHRAHMANN"><i class="fab fa-gitlab"></i></a>
+        <a href="https://bitbucket.org/sadathrahmann-admin/"><i class="fab fa-bitbucket"></i></a>
+        <a href="https://dribbble.com/sa_ath"><i class="fab fa-dribbble"></i></a>
+        <a href="https://twitter.com/Sadath_Rahman_N"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/sadathrahmann/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.snapchat.com/add/sadath_rahman"><i class="fa-brands fa-snapchat"></i></a>
+        <a href="https://t.me/sa_ath"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://id.vk.com/account/#/main"><i class="fa-brands fa-vk"></i></a>
+        <a href="https://youtube.com/sadathrahmann"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://wwww.behance.net/sadathrahmann"><i class="fa-brands fa-behance"></i></a>
+        <a href="https://pin.it/2gXBBLw"><i class="fa-brands fa-pinterest"></i></a>
+        <a href="https://www.buymeacoffee.com/sadathrahmann"><i class="fab fa-buymeacoffee"></i></a>
+        <a href="https://ko-fi.com/sadathrahmann"><i class="fab fa-kofi"></i></a>
+      </div>  
+      <p class="end">Copyright By Sadath Rahman Narangavil</p>
+    </footer>
 </body>
-</html>
+</html>    
