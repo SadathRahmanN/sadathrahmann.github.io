@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   // For Moving Name
   var typed = new Typed(".auto", {
-    strings: ["SADATH RAHMAN NARANGAVIL", "FREELANCER" ,"DEVELOPER & DESIGNER"],
+    strings: ["SADATH RAHMAN NARANGAVIL", "FREELANCER", "DEVELOPER & DESIGNER"],
     typeSpeed: 60,
     backSpeed: 70,
     loop: true,
@@ -51,39 +51,38 @@ document.addEventListener("DOMContentLoaded", function() {
   // Add event listener to the subscribe button
   subscribeButton.addEventListener('click', handleSubscribe);
 
-  // Get the slider element
-  var slider = document.querySelector('.projects .slider');
 
-  // Get the width of a single project
-  var projectWidth = document.querySelector('.project').offsetWidth;
 
-  // Set the width of the slider based on the number of projects
-  slider.style.width = projectWidth * slider.childElementCount + 'px';
-
-  // Slider variables
-  var slideIndex = 0;
-  var slideInterval;
-
-  // Function to show the next slide
-  function nextSlide() {
-    var projects = document.querySelectorAll('.project');
-    var totalSlides = projects.length;
-
-    projects[slideIndex].style.display = 'none';
-    slideIndex = (slideIndex + 1) % totalSlides;
-    projects[slideIndex].style.display = 'block';
-  }
-
-  // Start the auto slide
-  function startSlide() {
-    slideInterval = setInterval(nextSlide, 3000); // Auto slide every 3 seconds
-  }
-
-  // Stop the auto slide
-  function stopSlide() {
-    clearInterval(slideInterval);
-  }
-
-  // Initialize the slider
-  startSlide();
+  // Initialize Swiper
+  var swiper = new Swiper(".slide-container", {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    slidesPerGroup: 4,
+    loop: true,
+    centeredSlides: true, // Updated property name from "centerSlide" to "centeredSlides"
+    grabCursor: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      520: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      1000: {
+        slidesPerView: 4,
+      },
+    },
+  });
 });
