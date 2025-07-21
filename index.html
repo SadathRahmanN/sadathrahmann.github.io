@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
     <title>Sadath Rahman N Portfolio Website</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="javascript/script.js"></script>
     <script src="javascript/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
@@ -11,70 +9,71 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 <body>
 
-<!-- Hero Section -->
-<div class="hero">
+ <!-- Hero Section -->
+    <div class="hero">
+    
+ <!-- Navbar-->
+        <nav>
+            <h2 class="logo">Protfo<span>lio</span></h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
+            </ul>
+            <a href="#subscribe" class="btn">Subscribe</a>
+        </nav>
 
-<!-- Navbar-->
-    <nav>
-        <h2 class="logo">Protfo<span>lio</span></h2>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#service">Services</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact-me">Contact Me</a></li>
-        </ul>
-        <a href="#subscribe" class="btn">Subscribe</a>
-    </nav>
-
-    <!-- Home Section -->
-    <section class="home" id="home">
+<!-- Home Section -->
+    <section class="home" id="home"></section>
         <div class="content">
             <h4>Hy! I am</h4>
             <h1 class="auto">SADATH <span class="lightred">RAHMAN</span> <span class="darkred">NARANGAVIL</span></h1>
-            <!-- Subscribe Section -->
+            <!----Subscribe Section----->
             <section class="subscribe" id="subscribe">
-                <div class="newsletter">
-                    <form id="subscribe-form">
-                        <input type="email" name="email" id="email-input" placeholder="Enter Your Email">
-                        <input type="submit" name="submit" id="subscribe-button" value="Let's Start">
-                    </form>
-                </div>
-            </section>
-        </div>
-    </section>
-</div>
-
-<!-- About Section -->
-<section class="about" id="about">
-    <div class="main">
-        <img src="img/sidepick.jpg" alt="About Sadath">
-        <div class="about-text">
-            <h2>About Me</h2>
-            <h5>Developer <span>& Designer</span></h5>
-            <p>
-                My name is Sadath Rahman and I recently completed my Bachelor's degree in Computer Science. I have a passion
-                for designing and building websites that not only look great but also function well. As a web designer, I
-                enjoy creating visually appealing layouts and selecting color schemes that complement the content of each
-                page. I am always looking for new challenges and opportunities to learn and grow in my field. Whether I'm
-                working on a small personal project or a large-scale website for a client, I am committed to delivering
-                high-quality results that exceed expectations.
-            </p>
-            <a href="https://api.whatsapp.com/send?phone=919747536130">
-                <button type="button">Let's Talk</button>
-            </a>
-            <a href="RESUME (SADATH RAHMAN NARANGAVIL)OG.pdf" download id="resume-link">
-                <button type="button">Download CV</button>
-            </a>
+            <div class="newsletter">
+              <form id="subscribe-form">
+                <input type="email" name="email" id="email-input" placeholder="Enter Your Email">
+                <input type="submit" name="submit" id="subscribe-button" value="Let's Start">
+              </form>
+            </div>
         </div>
     </div>
-</section>
+    </section>
+    </section>
+
+<!-- About Section -->
+    <section class="about" id="about">
+        <div class="main">
+            <img src="img/sidepick.jpg">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5>Developer <span>& Designer</span></h5>
+                <p>
+                    My name is Sadath Rahman and I recently completed my Bachelor's degree in Computer Science. I have a passion
+                    for designing and building websites that not only look great but also function well. As a web designer, I
+                    enjoy creating visually appealing layouts and selecting color schemes that complement the content of each
+                    page. I am always looking for new challenges and opportunities to learn and grow in my field. Whether I'm
+                    working on a small personal project or a large-scale website for a client, I am committed to delivering
+                    high-quality results that exceed expectations.
+                </p>
+                <a href="https://api.whatsapp.com/send?phone=919747536130">
+                    <button type="button">Let's Talk</button>
+                </a>
+                <a href="RESUME (SADATH RAHMAN NARANGAVIL)OG.pdf" download id="resume-link">
+                    <button type="button">Download CV</button>
+                </a>
+            </div>
+        </div>
+    </section>
 
 <!-- Service Section -->
 <section class="service flex" id="service">
@@ -89,15 +88,15 @@
                 <div class="pra">
                     <p>Lorem ipsum suscipit dolorum ex fuga quam, facilis veniam aspernatur, corrupti temporibus ullam adipisci
                         labore, eius debitis molestias numquam!</p>
-                    <p class="full-para">Lorem ipsum suscipit dolorum ex fuga quam, facilis veniam aspernatur, corrupti temporibus
-                        ullam adipisci labore, eius debitis molestias numquam! Aenean lacinia bibendum nulla sed consectetur. Etiam
-                        porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia
-                        bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit
-                        libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget
-                        metus.</p>
-                    <p style="text-align: center;">
-                        <a class="button" href="#">Read More</a>
-                    </p>
+                        <p class="full-para">Lorem ipsum suscipit dolorum ex fuga quam, facilis veniam aspernatur, corrupti temporibus
+                            ullam adipisci labore, eius debitis molestias numquam! Aenean lacinia bibendum nulla sed consectetur. Etiam
+                            porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia
+                            bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit
+                            libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget
+                            metus.</p>
+                            <p style="text-align: center;">
+                                <a class="button" href="#">Read More</a>
+                            </p>
                 </div>
             </div>
             <div class="card">
@@ -106,15 +105,15 @@
                 <div class="pra">
                     <p>Lorem ipsum suscipit dolorum ex fuga quam, facilis veniam aspernatur, corrupti temporibus ullam adipisci
                         labore, eius debitis molestias numquam!</p>
-                    <p class="full-para">Lorem ipsum suscipit dolorum ex fuga quam, facilis veniam aspernatur, corrupti temporibus
-                        ullam adipisci labore, eius debitis molestias numquam! Aenean lacinia bibendum nulla sed consectetur. Etiam
-                        porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia
-                        bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit
-                        libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget
-                        metus.</p>
-                    <p style="text-align: center;">
-                        <a class="button" href="#">Read More</a>
-                    </p>
+                        <p class="full-para">Lorem ipsum suscipit dolorum ex fuga quam, facilis veniam aspernatur, corrupti temporibus
+                            ullam adipisci labore, eius debitis molestias numquam! Aenean lacinia bibendum nulla sed consectetur. Etiam
+                            porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia
+                            bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit
+                            libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget
+                            metus.</p>
+                            <p style="text-align: center;">
+                                <a class="button" href="#">Read More</a>
+                            </p>
                 </div>
             </div>
             <div class="card">
@@ -123,15 +122,15 @@
                 <div class="pra">
                     <p>Lorem ipsum suscipit dolorum ex fuga quam, facilis veniam aspernatur, corrupti temporibus ullam adipisci
                         labore, eius debitis molestias numquam!</p>
-                    <p class="full-para">Lorem ipsum suscipit dolorum ex fuga quam, facilis veniam aspernatur, corrupti temporibus
-                        ullam adipisci labore, eius debitis molestias numquam! Aenean lacinia bibendum nulla sed consectetur. Etiam
-                        porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia
-                        bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit
-                        libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget
-                        metus.</p>
-                    <p style="text-align: center;">
-                        <a class="button" href="#">Read More</a>
-                    </p>
+                        <p class="full-para">Lorem ipsum suscipit dolorum ex fuga quam, facilis veniam aspernatur, corrupti temporibus
+                            ullam adipisci labore, eius debitis molestias numquam! Aenean lacinia bibendum nulla sed consectetur. Etiam
+                            porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia
+                            bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit
+                            libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget
+                            metus.</p>
+                            <p style="text-align: center;">
+                                <a class="button" href="#">Read More</a>
+                            </p>
                 </div>
             </div>
         </div>
@@ -207,175 +206,162 @@
     </div>
   </section>
 
-<!-- Project Section -->
-<section class="projects" id="projects">
+  <!-- Project Section -->
+  <section class="projects" id="projects">
     <div class="title">
       <h2>Projects</h2>
     </div>
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <!-- Project 1 -->
-        <div class="swiper-slide">
-          <a href="https://bookhub-frontend.onrender.com" target="_blank">
-            <div class="image-box">
-              <img src="img/project.jpg" alt="BookHub" />
-            </div>
-            <div class="profile-details">
-              <div class="name-job">
-                <h3 class="name">BookHub</h3>
-                <h4 class="job">Online Book Library App</h4>
+      <div class="swiper">
+        <div class="slide-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="image-box">
+                <img src="img/project.jpg" alt="" />
               </div>
-            </div>
-          </a>
-        </div>
-        <!-- Project 2 -->
-        <div class="swiper-slide">
-          <a href="https://task63.onrender.com" target="_blank">
-            <div class="image-box">
-              <img src="img/project.jpg" alt="Task Manager 63" />
-            </div>
-            <div class="profile-details">
-              <div class="name-job">
-                <h3 class="name">Task Manager 63</h3>
-                <h4 class="job">To-Do App</h4>
-              </div>
-            </div>
-          </a>
-        </div>
-        <!-- Project 3 -->
-        <div class="swiper-slide">
-          <a href="https://food-del-frontend-sl8w.onrender.com" target="_blank">
-            <div class="image-box">
-              <img src="img/project.jpg" alt="FoodDelivery" />
-            </div>
-            <div class="profile-details">
-              <div class="name-job">
-                <h3 class="name">FoodDelivery</h3>
-                <h4 class="job">Food Ordering System</h4>
-              </div>
-            </div>
-          </a>
-        </div>
-        <!-- Project 4 -->
-        <div class="swiper-slide">
-          <a href="https://task62.onrender.com/" target="_blank">
-            <div class="image-box">
-              <img src="img/project.jpg" alt="Task Manager 62" />
-            </div>
-            <div class="profile-details">
-              <div class="name-job">
-                <h3 class="name">Task Manager 62</h3>
-                <h4 class="job">Project/Task App</h4>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <!-- Project 5 (You can remove or customize) -->
-        <div class="swiper-slide">
-          <div class="image-box">
-            <img src="img/project.jpg" alt="Project 5" />
-          </div>
-          <div class="profile-details">
-            <div class="name-job">
-              <h3 class="name">Project 5</h3>
-              <h4 class="job">Description</h4>
-            </div>
-          </div>
-        </div>
-        <!-- Add more project slides as needed -->
-      </div>
-
-      <div class="swiper-button-next swiper-navBtn"></div>
-      <div class="swiper-button-prev swiper-navBtn"></div>
-      <div class="swiper-pagination"></div>
+          <div class="swiper-slide">
+  <a href="https://bookhub-frontend.onrender.com" target="_blank" style="text-decoration: none; color: inherit;">
+    <div class="image-box">
+      <img src="img/project.jpg" alt="BookHub" />
     </div>
+    <div class="profile-details">
+      <div class="name-job">
+        <h3 class="name">BookHub</h3>
+        <h4 class="job">Online Book Library App</h4>
+      </div>
+    </div>
+  </a>
+</div>
+              <div class="swiper-slide">
+                <div class="image-box">
+                  <img src="img/project.jpg" alt="" />
+                </div>
+                <div class="profile-details">
+                  <div class="name-job">
+                    <h3 class="name">project 2</h3>
+                    <h4 class="job">descriptn</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-box">
+                    <img src="/img/project.jpg" alt="" />
+                </div>
+                <div class="profile-details">
+                    <div class="name-job">
+                      <h3 class="name">project 3</h3>
+                      <h4 class="job">descriptn</h4>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                    <div class="image-box">
+                     <img src="/img/project.jpg" alt="" />
+                    </div>
+                    <div class="profile-details">
+                      <div class="name-job">
+                        <h3 class="name">project 4</h3>
+                        <h4 class="job">descriptn</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="image-box">
+                       <img src="/img/project.jpg" alt="" />
+                      </div>
+                      <div class="profile-details">
+                         <div class="name-job">
+                          <h3 class="name">project 4</h3>
+                          <h4 class="job">descriptn</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="image-box">
+                       <img src="/img/project.jpg" alt="" />
+                      </div>
+                      <div class="profile-details">
+                          <div class="name-job">
+                          <h3 class="name">project 5</h3>
+                          <h4 class="job">descriptn</h4>
+                        </div>
+                      </div>
+                    </div>
+                     <!-- Add more project elements here -->
+            </div>
+          </div>
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
 </section>
-
-<!-- Customers Section -->
+<!------Customers Section-------->
 <section class="customers">
   <div class="title">
     <h2>Customers</h2>
-  </div>
-  <div class="customer-container">
-    <div class="customer">
-      <img src="/img/customer.jpg" alt="Customer 1">
-      <h3>Customer 1</h3>
     </div>
-    <div class="customer">
-      <img src="/img/customer.jpg" alt="Customer 2">
-      <h3>Customer 2</h3>
+    <div class="customer-container">
+      <div class="customer">
+        <img src="/img/customer.jpg" alt="Customer 1">
+        <h3>Customer 1</h3>
+      </div>
+      <div class="customer">
+        <img src="/img/customer.jpg" alt="Customer 2">
+        <h3>Customer 2</h3>
+      </div>
+      <div class="customer">
+        <img src="/img/customer.jpg" alt="Customer 3">
+        <h3>Customer 3</h3>
+      </div>
+      <div class="customer">
+        <img src="/img/customer.jpg" alt="Customer 4">
+        <h3>Customer 4</h3>
+      </div>
+      <!-- Add more customers here -->
     </div>
-    <div class="customer">
-      <img src="/img/customer.jpg" alt="Customer 3">
-      <h3>Customer 3</h3>
-    </div>
-    <div class="customer">
-      <img src="/img/customer.jpg" alt="Customer 4">
-      <h3>Customer 4</h3>
-    </div>
-    <!-- Add more customers here -->
-  </div>
-</section>
-
+  </section>
+  
+      
 <!-- Contact Me Section -->
-<section class="contact-me" id="contact-me">
-    <div class="contact-me">
-        <p>Let Me Get You A Beautiful Website.</p>
-        <a class="button-two" href="https://api.whatsapp.com/send?phone=919747536130">Hire Me</a>
-    </div>
-</section>
-
-<!-- Footer Section -->
-<footer>
-  <p>Sadath Rahman Narangavil</p>
-  <div class="social">
-    <a href="https://www.facebook.com/SadathRahmanN"><i class="fab fa-facebook"></i></a>
-    <a href="https://www.instagram.com/_sa_ath_/"><i class="fab fa-instagram"></i></a>
-    <a href="https://wa.me/919747536130"><i class="fab fa-whatsapp"></i></a>
-    <a href="https://github.com/SadathRahmanN"><i class="fab fa-github"></i></a>
-    <a href="https://support.discord.com/hc/en-us/profiles/7488526696983"><i class="fab fa-discord"></i></a>
-    <a href="https://gitlab.com/SADATHRAHMANN"><i class="fab fa-gitlab"></i></a>
-    <a href="https://bitbucket.org/sadathrahmann-admin/"><i class="fab fa-bitbucket"></i></a>
-    <a href="https://dribbble.com/sa_ath"><i class="fab fa-dribbble"></i></a>
-    <a href="https://twitter.com/Sadath_Rahman_N"><i class="fab fa-twitter"></i></a>
-    <a href="https://www.linkedin.com/in/sadathrahmann/"><i class="fab fa-linkedin"></i></a>
-    <a href="https://www.snapchat.com/add/sadath_rahman"><i class="fa-brands fa-snapchat"></i></a>
-    <a href="https://t.me/sa_ath"><i class="fa-brands fa-telegram"></i></a>
-    <a href="https://id.vk.com/account/#/main"><i class="fa-brands fa-vk"></i></a>
-    <a href="https://youtube.com/sadathrahmann"><i class="fa-brands fa-youtube"></i></a>
-    <a href="https://wwww.behance.net/sadathrahmann"><i class="fa-brands fa-behance"></i></a>
-    <a href="https://pin.it/2gXBBLw"><i class="fa-brands fa-pinterest"></i></a>
-  </div>
+    <section class="contact-me" id="contact-me">
+        <div class="contact-me">
+            <p>Let Me Get You A Beautiful Website.</p>
+            <a class="button-two" href="https://api.whatsapp.com/send?phone=919747536130">Hire Me</a>
+        </div>
+    </section>
     
-    <br>
-    <br>
-    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="sadathrahmann" data-color="#FF5F5F" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
-    <br>
-    <br>
-    <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
-    <script type='text/javascript'>kofiwidget2.init('A Digital Cuppa for me', '#e02059', 'W7W4EMEFB');kofiwidget2.draw();</script>
-    <br>
-    <br>
+    <!-- Footer Section -->
+    <footer>
+      <p>Sadath Rahman Narangavil</p>
+      <div class="social">
+        <a href="https://www.facebook.com/SadathRahmanN"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/_sa_ath_/"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/919747536130"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://github.com/SadathRahmanN"><i class="fab fa-github"></i></a>
+        <a href="https://support.discord.com/hc/en-us/profiles/7488526696983"><i class="fab fa-discord"></i></a>
+        <a href="https://gitlab.com/SADATHRAHMANN"><i class="fab fa-gitlab"></i></a>
+        <a href="https://bitbucket.org/sadathrahmann-admin/"><i class="fab fa-bitbucket"></i></a>
+        <a href="https://dribbble.com/sa_ath"><i class="fab fa-dribbble"></i></a>
+        <a href="https://twitter.com/Sadath_Rahman_N"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/sadathrahmann/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.snapchat.com/add/sadath_rahman"><i class="fa-brands fa-snapchat"></i></a>
+        <a href="https://t.me/sa_ath"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://id.vk.com/account/#/main"><i class="fa-brands fa-vk"></i></a>
+        <a href="https://youtube.com/sadathrahmann"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://wwww.behance.net/sadathrahmann"><i class="fa-brands fa-behance"></i></a>
+        <a href="https://pin.it/2gXBBLw"><i class="fa-brands fa-pinterest"></i></a>
+      </div>
+        
+        <br>
+        <br>
+        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="sadathrahmann" data-color="#FF5F5F" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+        <br>
+        <br>
+        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('A Digital Cuppa for me', '#e02059', 'W7W4EMEFB');kofiwidget2.draw();</script>
+        <br>
+        <br>
 
-  <p class="end">Copyright By Sadath Rahman Narangavil</p>
-</footer>
-
-<!-- SwiperJS Initialization (at the end of body or in your script.js) -->
-<script>
-  var swiper = new Swiper(".swiper", {
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    loop: true,
-    slidesPerView: 1
-  });
-</script>
-
+      <p class="end">Copyright By Sadath Rahman Narangavil</p>
+    </footer>
 </body>
-</html>
+</html>    
